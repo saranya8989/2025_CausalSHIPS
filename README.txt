@@ -23,22 +23,29 @@ Data Notes
 - See the Supplementary Information (SI) for the full list of variables.
 
 ------------------------------
-PART 1
+PART 1 Replication Experiment Dataset (Tutorial)
 ------------------------------
-- The sample dataset for Part 1 is now split into **two zip files** (~138 MB total) and included in `data_for_tigramite/`:  
+Sample data for 24-hour intensity-change prediction only.
 
-   - `tigramite_ready_dataset_delv_0-2.zip`  
-   - `tigramite_ready_dataset_delv_3-6.zip`  
+Time-lag threshold for causal experiments: 4.
 
-After cloning the repository, unzip both files into the same directory using:
+Data resolution: 6-hourly.
 
-   unzip -j data_for_tigramite/tigramite_ready_dataset_delv_0-2.zip -d data_for_tigramite/
-   unzip -j data_for_tigramite/tigramite_ready_dataset_delv_3-6.zip -d data_for_tigramite/
+See the Supplementary Information (SI) for the full variable list.
 
-⚠️ Note: If unzipping creates subfolders (e.g., `data_for_tigramite/tigramite_ready_dataset_delv_0-2/`), move the files up one level:
+Dataset is provided as multiple zip files in data_for_tigramite/:
+tigramite_ready_dataset_delv24_*.zip
 
-   mv data_for_tigramite/tigramite_ready_dataset_delv_0-2/* data_for_tigramite/  
-   rmdir data_for_tigramite/tigramite_ready_dataset_delv_0-2
+Unzipping Instructions:
+
+  unzip -j data_for_tigramite/tigramite_ready_dataset_delv24_0.zip -d data_for_tigramite/
+  # Replace 0 with 1..6 or use * 
+
+⚠️ Warning: If unzipping creates subfolders (e.g., data_for_tigramite/tigramite_ready_dataset_delv24_0/), move the files up one level:
+
+  mv data_for_tigramite/tigramite_ready_dataset_delv24_0/* data_for_tigramite/
+  rmdir data_for_tigramite/tigramite_ready_dataset_delv24_0
+  # Repeat for other folds
 
 --------------------------------------------
 SHIPS Developmental Data (Part 2 & 3)
