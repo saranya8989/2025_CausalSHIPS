@@ -12,3 +12,5 @@ Part 2 & 3: Analysis of SHIPS developmental data (baseline and new predictors) a
 
 The "util" directory contains reusable helper modules used by the main scripts.
 
+Check README.txt for all the details
+
