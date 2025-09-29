@@ -94,7 +94,7 @@ Instructions to Run the Scripts
 4. Launch Jupyter Lab and run the notebooks step by step:
    jupyter lab
 
-   Begin from Part 1 and continue sequentially for the analysis of the result*.pkl files.
+   Begin from Part 1.1, 1.2 etc.. and continue sequentially for creation and the analysis of the result*.pkl files.
 
 
 Notes & Contact
