@@ -59,7 +59,7 @@ New predictors: dict_split0..6.pkl
 
 All files are preprocessed and ready to use in the scripts named Part2*.
 
-=========================================
+
 Prerequisites
 =========================================
 Install the Python packages listed in the provided environment file (`ships-2024.yml`):
@@ -78,7 +78,6 @@ Note on CONFIG.py:
 - Its only role here is to set the time lag threshold. Since the data provided is for 24-hour intensity prediction, the threshold is fixed at 4 and already set.  
 - You still need to run it once before starting the notebooks, but no modifications are required.
 
-=========================================
 Instructions to Run the Scripts
 =========================================
 
@@ -98,7 +97,7 @@ Instructions to Run the Scripts
 
    Begin from Part 1 and continue sequentially for the analysis of the result*.pkl files.
 
-=========================================
+
 Notes & Contact
 =========================================
 - Output files (results* `.pkl`, figures) are written to the `results/` and `figures/` subdirectories used in the scripts.
