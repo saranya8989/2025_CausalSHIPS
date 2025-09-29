@@ -12,7 +12,6 @@ Part 2 & 3: Analysis of SHIPS developmental data (baseline and new predictors) a
 
 The "util" directory contains reusable helper modules used by the main scripts.
 
-=========================================
 Data Notes
 =========================================
 - For brevity, Part 1 provides only a sample dataset for 24-hour intensity-change prediction.
