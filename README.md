@@ -1,4 +1,3 @@
-===============================================
 Welcome to the Causal SHIPS Project Repository
 ===============================================
 
@@ -13,7 +12,6 @@ Part 2 & 3: Analysis of SHIPS developmental data (baseline and new predictors) a
 The "util" directory contains reusable helper modules used by the main scripts.
 
 
-=========================================
 Data Notes
 =========================================
 - For brevity, Part 1 provides only a sample dataset for 24-hour intensity-change prediction.
@@ -81,7 +79,6 @@ we provide processed version of the partial dependence for selected variables (p
 
 in the ./MLP_data_for_part3 folder. The scripts to generate these files are attached at the end of the relevant Part 3 notebooks for users who wish to generate this data themselves.
 
-=========================================
 Prerequisites
 =========================================
 Install the Python packages listed in the provided conda environment file (`ships-2024.yml`):
@@ -100,7 +97,6 @@ Note on CONFIG.py:
 - Its only role here is to set the time lag threshold. Since the data provided is for 24-hour intensity prediction, the threshold is fixed at 4 and already set.  
 - You still need to run it once before starting the notebooks, but no modifications are required.
 
-=========================================
 Instructions to Run the Scripts
 =========================================
 
@@ -120,7 +116,6 @@ Instructions to Run the Scripts
 
    Begin from Part 1 and continue sequentially for the analysis of the result*.pkl files.
 
-=========================================
 Notes & Contact
 =========================================
 - Output files (results* `.pkl`, figures) are written to the `results/` and `figures/` subdirectories used in the scripts.
