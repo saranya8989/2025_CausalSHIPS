@@ -37,15 +37,18 @@ tigramite_ready_dataset_delv24_*.zip
 Unzipping Instructions:
 
   unzip -j data_for_tigramite/tigramite_ready_dataset_delv24_0.zip -d data_for_tigramite/
-  # Replace 0 with 1..6 or use * 
+    # Replace 0 with 1..6 or use * 
 
-⚠️ Warning: If unzipping creates subfolders (e.g., data_for_tigramite/tigramite_ready_dataset_delv24_0/), move the files up one level:
+  ⚠️ Warning: If unzipping creates subfolders (e.g., data_for_tigramite/tigramite_ready_dataset_delv24_0/), move the files up one level:
 
   mv data_for_tigramite/tigramite_ready_dataset_delv24_0/* data_for_tigramite/
   rmdir data_for_tigramite/tigramite_ready_dataset_delv24_0
+ 
   # Repeat for other folds
-If you want to create similar results for rest of the time lags in the paper (48, 72, 96, 120 hrs); 
-All the data are in the file named "tigramite_ready_dataset_part1.zip" can be accessed at https://doi.org/10.5281/zenodo.17241222
+  
+  If you want to create similar results for rest of the time lags in the paper (48, 72, 96, 120 hrs); 
+  All the data are in the file named "tigramite_ready_dataset_part1.zip" can be accessed at https://doi.org/10.5281/zenodo.17241222
+
 --------------------------------------------
 SHIPS Developmental Data (Part 2 & 3)
 ---------------------------------------------
