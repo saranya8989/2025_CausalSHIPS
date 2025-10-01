@@ -8,7 +8,7 @@ import xarray as xr
 
 def remove_storms(trackpath=None,basinID='NA',yearmin=None,yearmax=None,remove_set=None):
     """
-    Hard-code storm removal.
+    Remove specific storms from yearly track CSVs using a hard-coded list.
     """
     filt_stormnames = []
     for year in tqdm([int(obj) for obj in np.linspace(yearmin,yearmax,yearmax-yearmin+1)]):
@@ -17,7 +17,7 @@ def remove_storms(trackpath=None,basinID='NA',yearmin=None,yearmax=None,remove_s
         tracksDF = pd.read_csv(track[0])
         # Find unique TCs in the track file
         tracksDF['name'].unique()
-        stormnames = list(tracksDF['name'].unique())
+        stormnames = list(tracksDF['name'].unique()) # Unique storms that year
 
         # Use the dictionary "remove_set" to filter TCs
         for obj in remove_set:
@@ -27,7 +27,9 @@ def remove_storms(trackpath=None,basinID='NA',yearmin=None,yearmax=None,remove_s
         filt_stormnames.append(stormnames)
     return filt_stormnames
 
-        
+    """
+    Read SHIPS processed CSVs for a given storm.
+    """        
 def read_processed_vars_ships(loc=None,foldernames=['newships_dev_POT'],year=None,stormname=None):
     store = []
     for foldername in foldernames:
@@ -40,6 +42,9 @@ def read_processed_vars_ships(loc=None,foldernames=['newships_dev_POT'],year=Non
 # SHIPS routine
 ################################################################################################################################################################
 def read_SHIPS_csv(startyear=None,endyear=None,vars_path=None,filted_TCnames=None,suffixlist=None):
+	"""
+    Load SHIPS CSVs for storms over multiple years.
+    """
     storeyear = []
     for ind,year in tqdm(enumerate([int(obj) for obj in np.linspace(startyear,endyear,int(endyear)-int(startyear)+1)])):
         filt_TCyear = filted_TCnames[ind]
