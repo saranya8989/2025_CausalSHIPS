@@ -35,7 +35,7 @@ Dataset is provided as multiple zip files in data_for_tigramite/: ]tigramite_rea
 Unzipping Instructions: 
 unzip -j data_for_tigramite/tigramite_ready_dataset_delv24_0.zip -d data_for_tigramite/ 
 
-# Replace 0 with 1..6 or use * 
+ Replace 0 with 1..6 or use * 
 
 ⚠️ Warning: If unzipping creates subfolders (e.g., data_for_tigramite/tigramite_ready_dataset_delv24_0/), 
 
@@ -45,7 +45,7 @@ Now you can test run the tutorial notebooks on jupyter lab starting from Part1_T
 
 Part 1.1 lets you create the results from the causal discover experiments; To reproduce the full results, run all 7 folds in the loop given. This may take ~7 minutes per fold depending on your system. 
 
-For other time lags (48, 72, 96, 120 hrs), all data are in tigramite_ready_dataset_part1.zip and can be accessed at https://doi.org/10.5281/zenodo.17241222
+### For other time lags (48, 72, 96, 120 hrs), all data are in tigramite_ready_dataset_part1.zip and can be accessed at https://doi.org/10.5281/zenodo.17241222
 
 --------------------------------------------
 SHIPS Developmental Data (Part 2 & 3)
