@@ -83,7 +83,7 @@ Part 1.1 lets you create the results from the causal discover experiments; To re
 
 
 --------------------------------------------
-SHIPS Developmental Data (Part 2)
+Tests with SHIPS Developmental Data (Part 2)
 ---------------------------------------------
 Compressed dataset: proc/pickle/dev24.zip
 
