@@ -60,6 +60,27 @@ New predictors: dict_split0..6.pkl
 
 All files are preprocessed and ready to use in the scripts named Part2*.
 
+--------------------------------------------
+Processed SHAP values and trained MLPs (Part 3)
+---------------------------------------------
+We calculated the SHAP values for both the 24-hr lead time SHIPS (MLP) and SHIPS+ (MLP, MLR) models for both the case study Larry (2021) and the last 300 test samples.
+
+This data is processed and can be accessed from individual pickle files in ./MLP_data_for_part3/shap_results
+
+SHIPS+ SHAP: plus_shap_values_4_*.pkl
+SHIPS SHAP: ships_shap_values_4_*.pkl
+
+The trained MLP models for the SHIPS and SHIPS+ datasets can be downloaded as compressed zip files from a publicly-available Zenodo repository (link:).
+
+We recommend to unzip these files in the /proc folder, after which you will see two new folders (mlp_models_causal_oldships_, mlp_models_causal_plus_) and a new file 
+(mlp_models_causal_no_fs.pkl).
+
+The MLP files are relatively large and have been shown to cause kernel crashing in older Python enviornments. To ensure easy reproduction of the main results in Part3, 
+
+we provide processed version of the partial dependence for selected variables (part3_pdp_*.joblib) and MLP test predictions (part3_case_ships_*.joblib)
+
+in the ./MLP_data_for_part3 folder. The scripts to generate these files are attached at the end of the relevant Part 3 notebooks for users who wish to generate this data themselves.
+
 =========================================
 Prerequisites
 =========================================
