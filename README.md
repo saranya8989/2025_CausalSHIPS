@@ -25,7 +25,7 @@ Install the Python packages listed in the provided conda environment file (`ship
 - Jupyter: (notebook/lab; `%matplotlib inline` used in notebooks)
 - Custom modules: read_config, util.data_process, util.models
 
-The environment YAML (`ships-2024.yml`) contains the package versions used in the script.
+The environment YAML (`ships.yml`) contains the package versions used in the script.
 
 Note on CONFIG.py:
 - The CONFIG.py script handles creation/preprocessing of the pickle dataframe.  
@@ -40,13 +40,14 @@ Instructions to Run the Scripts
    cd <repo_name>
 
 2. Create and activate the environment from the provided yml file:
-   conda env create -f ships-2024.yml
+   conda env create -f ships.yml
+   pip install -r requirements.txt
    conda activate ships
 
-3. Run the configuration file to set paths and defaults (run once, no edits needed):
+4. Run the configuration file to set paths and defaults (run once, no edits needed):
    python CONFIG.py
 
-4. Launch Jupyter Lab and run the notebooks step by step:
+5. Launch Jupyter Lab and run the notebooks step by step:
    jupyter lab
 
    Begin from Part 1.Tutorial 1 and continue sequentially.
