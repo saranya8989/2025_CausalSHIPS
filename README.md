@@ -16,7 +16,7 @@ The "util" directory contains reusable helper modules used by the main scripts f
 
 Prerequisites
 =========================================
-Install the Python packages listed in the provided conda environment file (`ships-2024.yml`):
+Install the Python packages listed in the provided conda environment file (`ships.yml`):
 
 - Core: numpy, pandas, xarray, netCDF4, glob, ast, gc, pickle, copy, os
 - Visualization: matplotlib, seaborn
