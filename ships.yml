@@ -1,0 +1,20 @@
+name: ships
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - xarray
+  - jupyterlab
+  - numba
+  - networkx
+  - mamba
+  - netcdf4
+  - ca-certificates
+  - certifi
+  - openssl
+  - dcor
+  - natsort
+  - xcdat
+  - xesmf
+prefix: /work/FAC/FGSE/IDYST/tbeucler/default/saranya/miniconda3/envs/ships
