@@ -20,34 +20,35 @@ Data Notes
 - Data resolution: **6-hourly**. 
 - See the Supplementary Information (SI) for the full list of variables.
 
-------------------------------
-PART 1 Replication Experiment Dataset (Tutorial)
-------------------------------
-Sample data for 24-hour intensity-change prediction only.
+## Part 1: Replication Experiment Dataset (Tutorial)
 
-Time-lag threshold for causal experiments: 4.
+Sample data is provided for 24-hour intensity-change prediction only.
 
-Data resolution: 6-hourly.
+**Time-lag threshold for causal experiments:** 4  
+**Data resolution:** 6-hourly  
 
-See the Supplementary Information (SI) for the full variable list.
+### Dataset location
+The data is in `data_for_tigramite/` as zip files:  
+`tigramite_ready_dataset_delv24_*.zip`
 
-Dataset is provided as multiple zip files in data_for_tigramite/:
-tigramite_ready_dataset_delv24_*.zip
+### Unzipping Instructions
+1. Unzip each file:  
+```bash
+unzip -j data_for_tigramite/tigramite_ready_dataset_delv24_0.zip -d data_for_tigramite/
+# Replace 0 with 1..6 or use *
 
-Unzipping Instructions:
+    ⚠️ Important: If unzipping creates subfolders, move files up one level:
 
-  unzip -j data_for_tigramite/tigramite_ready_dataset_delv24_0.zip -d data_for_tigramite/
-    # Replace 0 with 1..6 or use * 
+mv data_for_tigramite/tigramite_ready_dataset_delv24_0/* data_for_tigramite/
+rmdir data_for_tigramite/tigramite_ready_dataset_delv24_0
 
-  ⚠️ Warning: If unzipping creates subfolders (e.g., data_for_tigramite/tigramite_ready_dataset_delv24_0/), move the files up one level:
+Running the notebooks
 
-  mv data_for_tigramite/tigramite_ready_dataset_delv24_0/* data_for_tigramite/
-  rmdir data_for_tigramite/tigramite_ready_dataset_delv24_0
- 
-  # Repeat for other folds
-  
-  If you want to create similar results for rest of the time lags in the paper (48, 72, 96, 120 hrs); 
-  All the data are in the file named "tigramite_ready_dataset_part1.zip" can be accessed at https://doi.org/10.5281/zenodo.17241222
+    Run scripts in order: Part1_Tutorial_01.ipynb, Part1_Tutorial_02.ipynb, etc.
+
+    To reproduce the full results, run all 7 folds (may take ~7 minutes per fold depending on your system).
+
+    For other time lags (48, 72, 96, 120 hrs), all data are in tigramite_ready_dataset_part1.zip and can be accessed at https://doi.org/10.5281/zenodo.17241222
 
 --------------------------------------------
 SHIPS Developmental Data (Part 2 & 3)
