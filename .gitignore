@@ -1,0 +1,8 @@
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore temporary data/output
+*.pkl
+*.zip
+box_plot_pkl/
+
