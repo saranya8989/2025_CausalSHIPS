@@ -20,35 +20,32 @@ Data Notes
 - Data resolution: **6-hourly**. 
 - See the Supplementary Information (SI) for the full list of variables.
 
-## Part 1: Replication Experiment Dataset (Tutorial)
+------------------------------ 
+PART 1 Replication Experiment Dataset (Tutorial)
+ ------------------------------ 
 
-Sample data is provided for 24-hour intensity-change prediction only.
+Sample data for 24-hour intensity-change prediction only.
+ Time-lag threshold for causal experiments: 4. 
+Data resolution: 6-hourly. 
+See the Supplementary Information (SI) for the full variable list. 
 
-**Time-lag threshold for causal experiments:** 4  
-**Data resolution:** 6-hourly  
+Dataset is provided as multiple zip files in data_for_tigramite/: ]tigramite_ready_dataset_delv24_*.zip 
 
-### Dataset location
-The data is in `data_for_tigramite/` as zip files:  
-`tigramite_ready_dataset_delv24_*.zip`
 
-### Unzipping Instructions
-1. Unzip each file:  
-```bash
-unzip -j data_for_tigramite/tigramite_ready_dataset_delv24_0.zip -d data_for_tigramite/
-# Replace 0 with 1..6 or use *
+Unzipping Instructions: 
+unzip -j data_for_tigramite/tigramite_ready_dataset_delv24_0.zip -d data_for_tigramite/ 
 
-    ⚠️ Important: If unzipping creates subfolders, move files up one level:
+# Replace 0 with 1..6 or use * 
 
-mv data_for_tigramite/tigramite_ready_dataset_delv24_0/* data_for_tigramite/
-rmdir data_for_tigramite/tigramite_ready_dataset_delv24_0
+⚠️ Warning: If unzipping creates subfolders (e.g., data_for_tigramite/tigramite_ready_dataset_delv24_0/), 
 
-Running the notebooks
+move the files up one level: mv data_for_tigramite/tigramite_ready_dataset_delv24_0/* data_for_tigramite/ rmdir data_for_tigramite/tigramite_ready_dataset_delv24_0 
 
-    Run scripts in order: Part1_Tutorial_01.ipynb, Part1_Tutorial_02.ipynb, etc.
+Now you can test run the tutorial notebooks on jupyter lab starting from Part1_Tutorial.1.*. ; 
 
-    To reproduce the full results, run all 7 folds (may take ~7 minutes per fold depending on your system).
+Part 1.1 lets you create the results from the causal discover experiments; To reproduce the full results, run all 7 folds in the loop given. This may take ~7 minutes per fold depending on your system. 
 
-    For other time lags (48, 72, 96, 120 hrs), all data are in tigramite_ready_dataset_part1.zip and can be accessed at https://doi.org/10.5281/zenodo.17241222
+For other time lags (48, 72, 96, 120 hrs), all data are in tigramite_ready_dataset_part1.zip and can be accessed at https://doi.org/10.5281/zenodo.17241222
 
 --------------------------------------------
 SHIPS Developmental Data (Part 2 & 3)
