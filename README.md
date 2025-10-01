@@ -44,7 +44,8 @@ Unzipping Instructions:
   mv data_for_tigramite/tigramite_ready_dataset_delv24_0/* data_for_tigramite/
   rmdir data_for_tigramite/tigramite_ready_dataset_delv24_0
   # Repeat for other folds
-
+If you want to create similar results for rest of the time lags in the paper (48, 72, 96, 120 hrs); 
+All the data are in the file named "tigramite_ready_dataset_part1.zip" can be accessed at https://doi.org/10.5281/zenodo.17241222
 --------------------------------------------
 SHIPS Developmental Data (Part 2 & 3)
 ---------------------------------------------
@@ -68,7 +69,7 @@ This data is processed and can be accessed from individual pickle files in ./MLP
 SHIPS+ SHAP: plus_shap_values_4_*.pkl
 SHIPS SHAP: ships_shap_values_4_*.pkl
 
-The trained MLP models for the SHIPS and SHIPS+ datasets can be downloaded as compressed zip files from a publicly-available Zenodo repository (link:).
+The trained MLP models for the SHIPS and SHIPS+ datasets can be downloaded as compressed zip files from a publicly-available Zenodo repository ( https://doi.org/10.5281/zenodo.17241222).
 
 We recommend to unzip these files in the /proc folder, after which you will see two new folders (mlp_models_causal_oldships_, mlp_models_causal_plus_) and a new file 
 (mlp_models_causal_no_fs.pkl).
